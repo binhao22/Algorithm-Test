@@ -1,8 +1,8 @@
 class Solution {
     public String solution(String cipher, int code) {
         String answer = "";
-        for (int i = 0; (code-1) + i*code < cipher.length(); i++)
-            answer += cipher.charAt((code-1) + i*code);
+        for (int i = code-1; + i < cipher.length(); i += code)
+            answer += cipher.charAt(i);
         return answer;
     }
 }
